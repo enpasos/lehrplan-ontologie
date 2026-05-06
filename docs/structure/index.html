@@ -1,0 +1,1337 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../patterns/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="de">
+        
+          <link rel="alternate" href="../index.en/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Ontologie-Modell - Lehrplan Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/mkdocs_d2_plugin.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ontologie-modell" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Lehrplan Ontology" class="md-header__button md-logo" aria-label="Lehrplan Ontology" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lehrplan Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ontologie-Modell
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../index.en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FWU-DE/lehrplan-ontologie" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Lehrplan Ontology" class="md-nav__button md-logo" aria-label="Lehrplan Ontology" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    Lehrplan Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FWU-DE/lehrplan-ontologie" title="Zum Repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontologien allgemein
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konzeptuelle Grundlagen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontologie-Modell
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ontologie-Modell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verstandnis-der-wissensstruktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verständnis der Wissensstruktur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-struktur-der-lehrplan-ontologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aufbau und Struktur der Lehrplan Ontologie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modellierung-designprinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modellierung / Designprinzip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nachgenutzte-ontologienvokabulare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nachgenutzte Ontologien/Vokabulare
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uberblick-uber-klassen-beziehungen-hierarchien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Überblick über Klassen, Beziehungen, Hierarchien
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Überblick über Klassen, Beziehungen, Hierarchien">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#klassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instanzen-individuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instanzen (individuals)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beziehungen-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beziehungen (properties)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-unterschiedlicher-terminologien-der-bundeslander" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping unterschiedlicher Terminologien der Bundesländer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping unterschiedlicher Terminologien der Bundesländer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-der-bildungsstandards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration der Bildungsstandards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beispiele
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verwendung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Über uns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#verstandnis-der-wissensstruktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verständnis der Wissensstruktur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-struktur-der-lehrplan-ontologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aufbau und Struktur der Lehrplan Ontologie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modellierung-designprinzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modellierung / Designprinzip
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nachgenutzte-ontologienvokabulare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nachgenutzte Ontologien/Vokabulare
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uberblick-uber-klassen-beziehungen-hierarchien" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Überblick über Klassen, Beziehungen, Hierarchien
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Überblick über Klassen, Beziehungen, Hierarchien">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#klassen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klassen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instanzen-individuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instanzen (individuals)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beziehungen-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Beziehungen (properties)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-unterschiedlicher-terminologien-der-bundeslander" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping unterschiedlicher Terminologien der Bundesländer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping unterschiedlicher Terminologien der Bundesländer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integration-der-bildungsstandards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration der Bildungsstandards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ontologie-modell">Ontologie-Modell</h1>
+<h2 id="verstandnis-der-wissensstruktur">Verständnis der Wissensstruktur</h2>
+<p><em>Lehrplanwissen repräsentiern. -&gt; was ist überhaupt ein lehrplan im ontolgischen Sinne? → information darüber wie ein prozess ablaufen soll. Lehrprozess und lernprozess. Kompetenz vs. Kompetenzspezifikation</em></p>
+<h2 id="aufbau-und-struktur-der-lehrplan-ontologie">Aufbau und Struktur der Lehrplan Ontologie</h2>
+<p>Die Lehrplan-Ontologie ist eine formale OWL-Ontologie, die die Konzepte und Beziehungen des deutschen Schulsystems im Bereich Lehrplangestaltung maschinenlesbar beschreibt. </p>
+<p>Sie lässt sich in fünf thematische Schichten gliedern:</p>
+<p><strong>1. Bildungskontext: Schule, Fach und Bundesland</strong></p>
+<p>Die oberste Schicht modelliert den institutionellen Rahmen. <strong>Schulfach</strong> (<code>LP_0000001</code>) ist die Wurzelklasse für alle Unterrichtsfächer und wird in Subklassen wie MINT-Fach, Naturwissenschaftsfach, Fremdsprachenfach und Gesellschaftswissenschaftsfach untergliedert. Ergänzend gibt es den <strong>Schulfachbezug</strong> (<code>LP_0000540</code>) für Angaben zur Stellung eines Faches (Pflichtfach, Wahlpflichtfach, erste/zweite/dritte Fremdsprache).
+<strong>Schulart</strong> (<code>LP_0000111</code>) beschreibt den Schultyp (z.B. Gymnasium, Gesamtschule), während <strong>Bildungsgang</strong> (<code>LP_0000816</code>) mit Subklassen wie Gymnasialer Bildungsgang, Hauptschulbildungsgang und Realschulbildungsgang den pädagogischen Weg einer Schülerin oder eines Schülers abbildet. Die 16 Bundesländer sind als Individuen der Klasse <strong>Bundesland Bezeichnung</strong> (<code>LP_0000040</code>) erfasst.</p>
+<p><strong>2. Zeitliche und stufenbezogene Einordnung</strong></p>
+<p><strong>Jahrgangsstufe</strong> (<code>LP_0000009</code>) und <strong>Schulstufe</strong> (<code>LP_0000020</code>) strukturieren den zeitlichen Verlauf von Bildungsgängen. Schulstufe differenziert sich in Oberstufenphase, Einführungsphase und Qualifikationsphase. <strong>Schulabschluss</strong> (<code>LP_0000019</code>) modelliert erreichbare Abschlüsse wie Allgemeine Hochschulreife, Fachabitur, Mittlerer Schulabschluss und Erster Schulabschluss – jeweils auch in länderspezifischen Subklassen (z.B. Allgemeine Hochschulreife (HH), Mittlerer Abschluss (SN)).</p>
+<p><strong>3. Die Curricularen Elemente und die Heterogenitätslösung</strong></p>
+<p>Die anspruchsvollste und umfangreichste Schicht der Ontologie ist die Klasse <strong>Curriculares Element</strong> (<code>LP_0000261</code>). Sie ist der generische Oberbegriff für alle inhaltlichen Bausteine eines Lehrplans. Da die 16 Bundesländer ihre Lehrpläne strukturell sehr unterschiedlich aufgebaut haben, löst die Ontologie dieses Problem durch ein zweistufiges Muster:</p>
+<p>Generische Superklassen fassen ähnliche Konzepte bundeslandübergreifend zusammen:</p>
+<ul>
+<li><strong>CE-Fragment</strong> (<code>LP_0001015</code>): Abschnitte und Kapitel eines Lehrplans, die selbst keine inhaltliche Semantik tragen, aber Struktur geben – entspricht in jedem Bundesland dem länderspezifischen „Lehrplanfragment": Lehrplanfragment (BE), Lehrplanfragment (BY), Lehrplanfragment (HH), Lehrplanfragment (SN) usw.</li>
+<li><strong>CE-Bereich</strong> (<code>LP_0000349</code>): Inhaltlich gegliederte Bereiche wie Kompetenzbereiche, Lernbereiche, Leitideen oder Themenfelder. Subklassen hiervon sind z.B. Kompetenzbereich (BE/HH/RP/SN/NW), Lernbereich (BY/SN/NI), Leitidee (BE/BW/HH/RP), Thema und Themenfeld in verschiedenen Ländervarianten sowie Inhalt (HH) oder Inhaltsfeld (HE/NW).</li>
+<li><strong>CE-Kompetenzspezifikation</strong> (<code>LP_0000263</code>): Beschreibt Kompetenzen und Anforderungen, z.B. Anforderung/Mindestanforderung (HH), Kompetenzerwartung (BY), Kompetenz (RP), Standard (BE), Lernziel und Lerninhalt (SN).</li>
+<li><strong>CE-Lerninhalt</strong> (<code>LP_0000332</code>): Inhaltliche Lerngegenstände.</li>
+<li><strong>CE-Hinweis</strong> (<code>LP_0000852</code>): Didaktische Hinweise und Anmerkungen.</li>
+</ul>
+<p><strong>Länderspezifische Lehrpläne</strong> sind Subklassen von Lehrplan (<code>LP_0000438</code>): LehrplanPLUS (BY), Lehrplan (SN/RP/SL/ST/TH), Bildungsplan (BW/HH/HB), Rahmenlehrplan (BB), Kerncurriculum (NI/HE), Kernlehrplan (NW), Fachanforderung (SH), Rahmenplan (MV).</p>
+<p><strong>4. Niveau-System</strong></p>
+<p><strong>Niveau</strong> (<code>LP_0000037</code>) ist die Superklasse für alle Leistungs- und Bildungsgangniveaus. Die wichtigsten Subklassen sind <strong>Bildungsgangniveau</strong> (<code>LP_0000028</code>) – z.B. Gymnasialniveau Sek I, Hauptschulniveau, Realschulniveau, Gymnasialniveau Sek II – sowie <strong>Fachniveau Sek II</strong> (<code>LP_0000265</code>) für Kursniveaus in der Oberstufe (Grundkurs/Leistungurs, sowie länderspezifische Varianten). Auch hier existieren für jedes Bundesland eigene Subklassen, da die Niveaubegriffe und Abschlussbezüge landesspezifisch benannt sind (z.B. BOA/BBR/EBBR/MSA-Niveau in Berlin).</p>
+<p><strong>5. Relationen und Funktionen</strong></p>
+<p>Die Ontologie verwendet eine Mischung aus <strong>BFO-Properties</strong> (Basic Formal Ontology) und eigenen Properties. Die wichtigsten sind:</p>
+<ul>
+<li><code>bfo:BFO_0000051</code> (<strong>hat Teil</strong>): Die zentrale Hierarchierelation, mit der Lehrpläne in Fragmente, Fragmente in Bereiche und Bereiche in Kompetenzen gegliedert werden.</li>
+<li><code>LP_0000029</code> (<strong>von Bundesland</strong>): Verknüpft jeden Lehrplanknoten mit seinem Bundesland.</li>
+<li><code>LP_0000026</code> (<strong>hat Jahrgangsstufe</strong>): Ordnet Inhalte und Anforderungen Jahrgangsstufen zu.</li>
+<li><code>LP_0000833</code> (<strong>hat Bildungsgangniveau</strong>): Gibt an, für welches Bildungsgangniveau ein Element gilt.</li>
+<li><code>LP_0000537</code> (<strong>hat Schulfach</strong>) und LP_0000812 (<strong>für Schulart</strong>): Verknüpfen Lehrpläne mit Fach und Schultyp.</li>
+<li><code>LP_0000021</code> (<strong>ermöglicht Abschluss</strong>): Verbindet Bildungsgänge mit erreichbaren Schulabschlüssen.</li>
+<li><code>LP_0030051/56/57</code> (<strong>hat Beschreibung / Titel / Nummer</strong>): Metadaten-Properties für textuelle Inhalte.</li>
+</ul>
+<p>Ergänzt wird dies durch <strong>Schulartfunktion</strong> (<code>LP_0000475</code>) und <strong>Funktionsspezifikation</strong> (<code>LP_0000478</code>) mit Subklassen Strukturierungsfunktion, Beschreibungsfunktion, Bezugsfunktionen und Niveauspezifikationsfunktion – ein Mechanismus, mit dem jedem curricularen Element explizit angegeben wird, welche Rolle es im Lehrplan spielt (z.B. ob es strukturiert, beschreibt, auf etwas verweist oder ein Niveau spezifiziert).</p>
+<h2 id="modellierung-designprinzip">Modellierung / Designprinzip</h2>
+<p>Das Grundprinzip der Ontologie lässt sich so zusammenfassen: <strong>Eine gemeinsame Abstraktion, viele länderspezifische Konkretisierungen.</strong> Alle 16 Bundesländer nutzen dieselben generischen Klassen (Lehrplan, CE-Fragment, CE-Bereich, CE-Kompetenzspezifikation) und Properties (hat Teil, hat Jahrgangsstufe, hat Bildungsgangniveau), erhalten aber jeweils eigene Subklassen, die die lokale Terminologie bewahren. So kann die Ontologie sowohl bundeslandübergreifende Suchen (z.B. „alle Kompetenzbereiche zu Thema X in allen Ländern") als auch länderspezifische Auswertungen (z.B. „alle Lernbereiche im LehrplanPLUS Bayern") präzise ermöglichen.</p>
+<p>Die Ontologie ist <strong>modular</strong> aufgebaut: Die Strukturen und Inhalte jedes Bundeslandes werden in eigenen, voneinander getrennten Ontologien erfasst und durch eine übergeordnete <strong>Kern-Ontologie (Core)</strong> zusammengeführt. Diese Kern-Ontologie enthält diejenigen Elemente und Funktionen, die in allen Bundesländern grundsätzlich vorhanden sind – auch dann, wenn sie dort unterschiedliche Bezeichnungen, Strukturen oder Ausprägungen haben.</p>
+<p>Um Lehrpläne bundesländerübergreifend gemeinsam durchsuchbar zu machen, ohne dabei die individuellen Begrifflichkeiten oder Modellierungen der Länder zu verändern, übernimmt die Kern-Ontologie eine verbindende Rolle: Sie definiert gemeinsame Funktionen und Beziehungstypen, über die die jeweiligen Landes-Elemente eindeutig zugeordnet und in ein gemeinsames semantisches System integriert werden.</p>
+<p>Ein vereinfachtes Beispiel:</p>
+<p>Viele Bundesländer verwenden für ein ähnliches inhaltliches Element – etwa eine Kompetenzbeschreibung – unterschiedliche Begriffe oder Strukturformen. Die Kern-Ontologie weist diesen Elementen eine gemeinsame funktionale Rolle zu, z. B. eine bestimmte Art von Kompetenzbeschreibung. Dadurch können die unterschiedlichen Landesmodelle eindeutig miteinander verknüpft werden. Auf dieser Grundlage werden einheitliche Abfragen möglich, obwohl die Datenstrukturen der Lehrpläne selbst nicht vereinheitlicht werden müssen.</p>
+<p>Der modulare Aufbau und die Vernetzung über die Kern-Ontologie ermöglicht es perspektivisch, dass die Länder ihre Ontologien selbst verwalten, warten und anpassen können, ohne dass dadurch die Lehrplan-Ontologien der anderen Länder betroffen werden.</p>
+<div class="d2"><svg data-d2-version="v0.7.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 518 436" role="img" aria-label="Diagram"><svg class="d2-e99a6fb115ff4a8c9aa03b4958dc2c81 d2-svg" width="518" height="436" viewBox="-103 -101 518 436"><rect x="-103.000000" y="-101.000000" width="518.000000" height="436.000000" rx="0.000000" fill="#FFFFFF" class=" fill-N7" stroke-width="0" /><style type="text/css">
+.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .text-bold {
+	font-family: "d2-e99a6fb115ff4a8c9aa03b4958dc2c81-font-bold";
+}
+@font-face {
+	font-family: d2-e99a6fb115ff4a8c9aa03b4958dc2c81-font-bold;
+	src: url("data:application/font-woff;base64,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");
+}</style><style type="text/css">.shape {
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: round;
+}
+.connection {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.blend {
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N1{fill:#0A0F25;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N2{fill:#676C7E;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N3{fill:#9499AB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N4{fill:#CFD2DD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N5{fill:#DEE1EB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N6{fill:#EEF1F8;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-N7{fill:#FFFFFF;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B1{fill:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B2{fill:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B3{fill:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B4{fill:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B5{fill:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-B6{fill:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-AA2{fill:#4A6FF3;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-AA4{fill:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-AA5{fill:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-AB4{fill:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .fill-AB5{fill:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N1{stroke:#0A0F25;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N2{stroke:#676C7E;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N3{stroke:#9499AB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N4{stroke:#CFD2DD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N5{stroke:#DEE1EB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N6{stroke:#EEF1F8;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-N7{stroke:#FFFFFF;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B1{stroke:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B2{stroke:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B3{stroke:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B4{stroke:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B5{stroke:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-B6{stroke:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-AA2{stroke:#4A6FF3;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-AA4{stroke:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-AA5{stroke:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-AB4{stroke:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .stroke-AB5{stroke:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N1{background-color:#0A0F25;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N2{background-color:#676C7E;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N3{background-color:#9499AB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N4{background-color:#CFD2DD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N5{background-color:#DEE1EB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N6{background-color:#EEF1F8;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-N7{background-color:#FFFFFF;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B1{background-color:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B2{background-color:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B3{background-color:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B4{background-color:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B5{background-color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-B6{background-color:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-AA2{background-color:#4A6FF3;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-AA4{background-color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-AA5{background-color:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-AB4{background-color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .background-color-AB5{background-color:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N1{color:#0A0F25;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N2{color:#676C7E;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N3{color:#9499AB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N4{color:#CFD2DD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N5{color:#DEE1EB;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N6{color:#EEF1F8;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-N7{color:#FFFFFF;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B1{color:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B2{color:#0D32B2;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B3{color:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B4{color:#E3E9FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B5{color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-B6{color:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-AA2{color:#4A6FF3;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-AA4{color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-AA5{color:#F7F8FE;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-AB4{color:#EDF0FD;}
+		.d2-e99a6fb115ff4a8c9aa03b4958dc2c81 .color-AB5{color:#F7F8FE;}.appendix text.text{fill:#0A0F25}.md{--color-fg-default:#0A0F25;--color-fg-muted:#676C7E;--color-fg-subtle:#9499AB;--color-canvas-default:#FFFFFF;--color-canvas-subtle:#EEF1F8;--color-border-default:#0D32B2;--color-border-muted:#0D32B2;--color-neutral-muted:#EEF1F8;--color-accent-fg:#0D32B2;--color-accent-emphasis:#0D32B2;--color-attention-subtle:#676C7E;--color-danger-fg:red;}.sketch-overlay-B1{fill:url(#streaks-darker-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:lighten}.sketch-overlay-B2{fill:url(#streaks-darker-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:lighten}.sketch-overlay-B3{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-B4{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-B5{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-B6{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-AA2{fill:url(#streaks-dark-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:overlay}.sketch-overlay-AA4{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-AA5{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-AB4{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-AB5{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-N1{fill:url(#streaks-darker-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:lighten}.sketch-overlay-N2{fill:url(#streaks-dark-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:overlay}.sketch-overlay-N3{fill:url(#streaks-normal-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:color-burn}.sketch-overlay-N4{fill:url(#streaks-normal-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:color-burn}.sketch-overlay-N5{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-N6{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.sketch-overlay-N7{fill:url(#streaks-bright-d2-e99a6fb115ff4a8c9aa03b4958dc2c81);mix-blend-mode:darken}.light-code{display: block}.dark-code{display: none}</style><g class="Qlc="><g class="shape"><rect x="123.000000" y="166.000000" width="67.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="156.500000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">BW</text></g><g class="Qlk="><g class="shape"><rect x="0.000000" y="166.000000" width="63.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="31.500000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">BY</text></g><g class="QkU="><g class="shape"><rect x="250.000000" y="166.000000" width="62.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="281.000000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">BE</text></g><g class="S2Vybi1PbnRvbG9naWU="><g class="shape"><rect x="80.000000" y="0.000000" width="153.000000" height="66.000000" stroke="white" fill="#9F0E21" style="stroke-width:2;" /></g><text x="156.500000" y="38.500000" fill="white" class="text-bold" style="text-anchor:middle;font-size:16px">Kern-Ontologie</text></g><g class="KEtlcm4tT250b2xvZ2llIC0mZ3Q7IEJZKVswXQ==" style="opacity:0.400000"><marker id="mk-d2-e99a6fb115ff4a8c9aa03b4958dc2c81-1919600114" markerWidth="13.000000" markerHeight="16.000000" refX="8.500000" refY="8.000000" viewBox="0.000000 0.000000 13.000000 16.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon points="0.000000,0.000000 13.000000,8.000000 0.000000,16.000000" fill="#9F0E21" class="connection" stroke-width="3" /> </marker><path d="M 104.419874 67.386750 C 46.500000 106.000000 31.500000 126.000000 31.500000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-e99a6fb115ff4a8c9aa03b4958dc2c81-1919600114)" mask="url(#d2-e99a6fb115ff4a8c9aa03b4958dc2c81)" /></g><g class="KEtlcm4tT250b2xvZ2llIC0mZ3Q7IEJXKVswXQ==" style="opacity:0.400000"><path d="M 156.500000 68.500000 C 156.500000 106.000000 156.500000 126.000000 156.500000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-e99a6fb115ff4a8c9aa03b4958dc2c81-1919600114)" mask="url(#d2-e99a6fb115ff4a8c9aa03b4958dc2c81)" /></g><g class="KEtlcm4tT250b2xvZ2llIC0mZ3Q7IEJFKVswXQ==" style="opacity:0.400000"><path d="M 208.080126 67.386750 C 266.000000 106.000000 281.000000 126.000000 281.000000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-e99a6fb115ff4a8c9aa03b4958dc2c81-1919600114)" mask="url(#d2-e99a6fb115ff4a8c9aa03b4958dc2c81)" /></g><mask id="d2-e99a6fb115ff4a8c9aa03b4958dc2c81" maskUnits="userSpaceOnUse" x="-103" y="-101" width="518" height="436">
+<rect x="-103" y="-101" width="518" height="436" fill="white" />
+
+</mask></svg></svg></div>
+<p>Zu den bereits erwähnten Kernelementen (s.o. <em>Curriculare Elemente</em>) gehören beispielsweise der Lehrplan, der als gedankliche Klammer vielfältige Lehrplan-Fragmente (<em>CE-Fragment</em>) umfasst. Solche Lehrplan-Fragmente sind als ordnende Elemente zu verstehen, die wiederum Kompetenzbereiche oder Themenfelder unter sich haben können. Kompetenzbereiche und Themenfelder können abermals jeweils Kompetenzbereiche oder Themenfelder untergeordnet haben, die auf unterster Ebene aber immer eine Kompetenzspezifikation oder einen Lerninhalt haben. </p>
+<p>Beispielhafter Aufbau von Lehrplänen dargestellt mit unseren Kern-Elementen:</p>
+<div class="d2"><svg data-d2-version="v0.7.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 654 768" role="img" aria-label="Diagram"><svg class="d2-a23eaef2ddbf4d00b83f1f3eca07bc33 d2-svg" width="654" height="768" viewBox="-103 -101 654 768"><rect x="-103.000000" y="-101.000000" width="654.000000" height="768.000000" rx="0.000000" fill="#FFFFFF" class=" fill-N7" stroke-width="0" /><style type="text/css">
+.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .text-bold {
+	font-family: "d2-a23eaef2ddbf4d00b83f1f3eca07bc33-font-bold";
+}
+@font-face {
+	font-family: d2-a23eaef2ddbf4d00b83f1f3eca07bc33-font-bold;
+	src: url("data:application/font-woff;base64,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");
+}</style><style type="text/css">.shape {
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: round;
+}
+.connection {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.blend {
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N1{fill:#0A0F25;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N2{fill:#676C7E;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N3{fill:#9499AB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N4{fill:#CFD2DD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N5{fill:#DEE1EB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N6{fill:#EEF1F8;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-N7{fill:#FFFFFF;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B1{fill:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B2{fill:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B3{fill:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B4{fill:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B5{fill:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-B6{fill:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-AA2{fill:#4A6FF3;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-AA4{fill:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-AA5{fill:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-AB4{fill:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .fill-AB5{fill:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N1{stroke:#0A0F25;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N2{stroke:#676C7E;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N3{stroke:#9499AB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N4{stroke:#CFD2DD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N5{stroke:#DEE1EB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N6{stroke:#EEF1F8;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-N7{stroke:#FFFFFF;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B1{stroke:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B2{stroke:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B3{stroke:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B4{stroke:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B5{stroke:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-B6{stroke:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-AA2{stroke:#4A6FF3;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-AA4{stroke:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-AA5{stroke:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-AB4{stroke:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .stroke-AB5{stroke:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N1{background-color:#0A0F25;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N2{background-color:#676C7E;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N3{background-color:#9499AB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N4{background-color:#CFD2DD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N5{background-color:#DEE1EB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N6{background-color:#EEF1F8;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-N7{background-color:#FFFFFF;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B1{background-color:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B2{background-color:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B3{background-color:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B4{background-color:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B5{background-color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-B6{background-color:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-AA2{background-color:#4A6FF3;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-AA4{background-color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-AA5{background-color:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-AB4{background-color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .background-color-AB5{background-color:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N1{color:#0A0F25;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N2{color:#676C7E;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N3{color:#9499AB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N4{color:#CFD2DD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N5{color:#DEE1EB;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N6{color:#EEF1F8;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-N7{color:#FFFFFF;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B1{color:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B2{color:#0D32B2;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B3{color:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B4{color:#E3E9FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B5{color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-B6{color:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-AA2{color:#4A6FF3;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-AA4{color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-AA5{color:#F7F8FE;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-AB4{color:#EDF0FD;}
+		.d2-a23eaef2ddbf4d00b83f1f3eca07bc33 .color-AB5{color:#F7F8FE;}.appendix text.text{fill:#0A0F25}.md{--color-fg-default:#0A0F25;--color-fg-muted:#676C7E;--color-fg-subtle:#9499AB;--color-canvas-default:#FFFFFF;--color-canvas-subtle:#EEF1F8;--color-border-default:#0D32B2;--color-border-muted:#0D32B2;--color-neutral-muted:#EEF1F8;--color-accent-fg:#0D32B2;--color-accent-emphasis:#0D32B2;--color-attention-subtle:#676C7E;--color-danger-fg:red;}.sketch-overlay-B1{fill:url(#streaks-darker-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:lighten}.sketch-overlay-B2{fill:url(#streaks-darker-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:lighten}.sketch-overlay-B3{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-B4{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-B5{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-B6{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-AA2{fill:url(#streaks-dark-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:overlay}.sketch-overlay-AA4{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-AA5{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-AB4{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-AB5{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-N1{fill:url(#streaks-darker-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:lighten}.sketch-overlay-N2{fill:url(#streaks-dark-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:overlay}.sketch-overlay-N3{fill:url(#streaks-normal-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:color-burn}.sketch-overlay-N4{fill:url(#streaks-normal-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:color-burn}.sketch-overlay-N5{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-N6{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.sketch-overlay-N7{fill:url(#streaks-bright-d2-a23eaef2ddbf4d00b83f1f3eca07bc33);mix-blend-mode:darken}.light-code{display: block}.dark-code{display: none}</style><g class="Q0UtRnJhZ21lbnQgMQ=="><g class="shape"><rect x="47.000000" y="166.000000" width="149.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="121.500000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Fragment 1</text></g><g class="Q0UtRnJhZ21lbnQgMg=="><g class="shape"><rect x="299.000000" y="166.000000" width="149.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="373.500000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Fragment 2</text></g><g class="Q0UtQmVyZWljaCAx"><g class="shape"><rect x="54.000000" y="332.000000" width="134.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="121.000000" y="370.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Bereich 1</text></g><g class="Q0UtQmVyZWljaCAy"><g class="shape"><rect x="307.000000" y="332.000000" width="134.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="374.000000" y="370.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Bereich 2</text></g><g class="Q0UtS29tcGV0ZW56c3BlemlmaWthdGlvbg=="><g class="shape"><rect x="0.000000" y="498.000000" width="242.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="121.000000" y="536.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Kompetenzspezifikation</text></g><g class="Q0UtTGVybmluaGFsdA=="><g class="shape"><rect x="302.000000" y="498.000000" width="143.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="373.500000" y="536.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Lerninhalt</text></g><g class="TGVocnBsYW4="><g class="shape"><rect x="193.000000" y="0.000000" width="108.000000" height="66.000000" stroke="white" fill="#9F0E21" style="stroke-width:2;" /></g><text x="247.000000" y="38.500000" fill="white" class="text-bold" style="text-anchor:middle;font-size:16px">Lehrplan</text></g><g class="KExlaHJwbGFuIC0mZ3Q7IENFLUZyYWdtZW50IDEpWzBd" style="opacity:0.400000"><marker id="mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114" markerWidth="13.000000" markerHeight="16.000000" refX="8.500000" refY="8.000000" viewBox="0.000000 0.000000 13.000000 16.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon points="0.000000,0.000000 13.000000,8.000000 0.000000,16.000000" fill="#9F0E21" class="connection" stroke-width="3" /> </marker><path d="M 194.911457 67.374041 C 136.199997 106.000000 121.000000 126.000000 121.000000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><g class="KExlaHJwbGFuIC0mZ3Q7IENFLUZyYWdtZW50IDIpWzBd" style="opacity:0.400000"><path d="M 299.588543 67.374041 C 358.299988 106.000000 373.500000 126.000000 373.500000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><g class="KENFLUZyYWdtZW50IDEgLSZndDsgQ0UtQmVyZWljaCAxKVswXQ==" style="opacity:0.400000"><path d="M 121.000000 236.000000 C 121.000000 272.000000 121.000000 292.000000 121.000000 325.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><g class="KENFLUZyYWdtZW50IDIgLSZndDsgQ0UtQmVyZWljaCAyKVswXQ==" style="opacity:0.400000"><path d="M 373.500000 236.000000 C 373.500000 272.000000 373.500000 292.000000 373.500000 325.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><g class="KENFLUJlcmVpY2ggMSAtJmd0OyBDRS1Lb21wZXRlbnpzcGV6aWZpa2F0aW9uKVswXQ==" style="opacity:0.400000"><path d="M 121.000000 402.000000 C 121.000000 438.000000 121.000000 458.000000 121.000000 491.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><g class="KENFLUJlcmVpY2ggMiAtJmd0OyBDRS1MZXJuaW5oYWx0KVswXQ==" style="opacity:0.400000"><path d="M 373.500000 402.000000 C 373.500000 438.000000 373.500000 458.000000 373.500000 491.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-a23eaef2ddbf4d00b83f1f3eca07bc33-1919600114)" mask="url(#d2-a23eaef2ddbf4d00b83f1f3eca07bc33)" /></g><mask id="d2-a23eaef2ddbf4d00b83f1f3eca07bc33" maskUnits="userSpaceOnUse" x="-103" y="-101" width="654" height="768">
+<rect x="-103" y="-101" width="654" height="768" fill="white" />
+
+</mask></svg></svg></div>
+<div class="d2"><svg data-d2-version="v0.7.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 651 934" role="img" aria-label="Diagram"><svg class="d2-325f175dce3c41bdb33ba855392f844e d2-svg" width="651" height="934" viewBox="-103 -101 651 934"><rect x="-103.000000" y="-101.000000" width="651.000000" height="934.000000" rx="0.000000" fill="#FFFFFF" class=" fill-N7" stroke-width="0" /><style type="text/css">
+.d2-325f175dce3c41bdb33ba855392f844e .text-bold {
+	font-family: "d2-325f175dce3c41bdb33ba855392f844e-font-bold";
+}
+@font-face {
+	font-family: d2-325f175dce3c41bdb33ba855392f844e-font-bold;
+	src: url("data:application/font-woff;base64,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");
+}</style><style type="text/css">.shape {
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: round;
+}
+.connection {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.blend {
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N1{fill:#0A0F25;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N2{fill:#676C7E;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N3{fill:#9499AB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N4{fill:#CFD2DD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N5{fill:#DEE1EB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N6{fill:#EEF1F8;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-N7{fill:#FFFFFF;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B1{fill:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B2{fill:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B3{fill:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B4{fill:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B5{fill:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-B6{fill:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-AA2{fill:#4A6FF3;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-AA4{fill:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-AA5{fill:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-AB4{fill:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .fill-AB5{fill:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N1{stroke:#0A0F25;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N2{stroke:#676C7E;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N3{stroke:#9499AB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N4{stroke:#CFD2DD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N5{stroke:#DEE1EB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N6{stroke:#EEF1F8;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-N7{stroke:#FFFFFF;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B1{stroke:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B2{stroke:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B3{stroke:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B4{stroke:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B5{stroke:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-B6{stroke:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-AA2{stroke:#4A6FF3;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-AA4{stroke:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-AA5{stroke:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-AB4{stroke:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .stroke-AB5{stroke:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N1{background-color:#0A0F25;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N2{background-color:#676C7E;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N3{background-color:#9499AB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N4{background-color:#CFD2DD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N5{background-color:#DEE1EB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N6{background-color:#EEF1F8;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-N7{background-color:#FFFFFF;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B1{background-color:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B2{background-color:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B3{background-color:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B4{background-color:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B5{background-color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-B6{background-color:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-AA2{background-color:#4A6FF3;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-AA4{background-color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-AA5{background-color:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-AB4{background-color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .background-color-AB5{background-color:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N1{color:#0A0F25;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N2{color:#676C7E;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N3{color:#9499AB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N4{color:#CFD2DD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N5{color:#DEE1EB;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N6{color:#EEF1F8;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-N7{color:#FFFFFF;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B1{color:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B2{color:#0D32B2;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B3{color:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B4{color:#E3E9FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B5{color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-B6{color:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-AA2{color:#4A6FF3;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-AA4{color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-AA5{color:#F7F8FE;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-AB4{color:#EDF0FD;}
+		.d2-325f175dce3c41bdb33ba855392f844e .color-AB5{color:#F7F8FE;}.appendix text.text{fill:#0A0F25}.md{--color-fg-default:#0A0F25;--color-fg-muted:#676C7E;--color-fg-subtle:#9499AB;--color-canvas-default:#FFFFFF;--color-canvas-subtle:#EEF1F8;--color-border-default:#0D32B2;--color-border-muted:#0D32B2;--color-neutral-muted:#EEF1F8;--color-accent-fg:#0D32B2;--color-accent-emphasis:#0D32B2;--color-attention-subtle:#676C7E;--color-danger-fg:red;}.sketch-overlay-B1{fill:url(#streaks-darker-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:lighten}.sketch-overlay-B2{fill:url(#streaks-darker-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:lighten}.sketch-overlay-B3{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-B4{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-B5{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-B6{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-AA2{fill:url(#streaks-dark-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:overlay}.sketch-overlay-AA4{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-AA5{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-AB4{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-AB5{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-N1{fill:url(#streaks-darker-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:lighten}.sketch-overlay-N2{fill:url(#streaks-dark-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:overlay}.sketch-overlay-N3{fill:url(#streaks-normal-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:color-burn}.sketch-overlay-N4{fill:url(#streaks-normal-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:color-burn}.sketch-overlay-N5{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-N6{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.sketch-overlay-N7{fill:url(#streaks-bright-d2-325f175dce3c41bdb33ba855392f844e);mix-blend-mode:darken}.light-code{display: block}.dark-code{display: none}</style><g class="Q0UtRnJhZ21lbnQ="><g class="shape"><rect x="178.000000" y="166.000000" width="138.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="247.000000" y="204.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Fragment</text></g><g class="Q0UtQmVyZWljaA=="><g class="shape"><rect x="186.000000" y="332.000000" width="122.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="247.000000" y="370.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Bereich</text></g><g class="Q0UtS29tcGV0ZW56c3BlemlmaWthdGlvbg=="><g class="shape"><rect x="0.000000" y="498.000000" width="242.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="121.000000" y="536.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Kompetenzspezifikation</text></g><g class="Q0UtTGVybmluaGFsdA=="><g class="shape"><rect x="302.000000" y="498.000000" width="143.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="373.500000" y="536.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Lerninhalt</text></g><g class="Q0UtSGlud2Vpcw=="><g class="shape"><rect x="311.000000" y="664.000000" width="125.000000" height="66.000000" stroke="#9F0E21" fill="#F7F8FE" class=" fill-B6" style="stroke-width:5;" /></g><text x="373.500000" y="702.500000" fill="#9F0E21" class="text-bold" style="text-anchor:middle;font-size:16px">CE-Hinweis</text></g><g class="TGVocnBsYW4="><g class="shape"><rect x="193.000000" y="0.000000" width="108.000000" height="66.000000" stroke="white" fill="#9F0E21" style="stroke-width:2;" /></g><text x="247.000000" y="38.500000" fill="white" class="text-bold" style="text-anchor:middle;font-size:16px">Lehrplan</text></g><g class="KExlaHJwbGFuIC0mZ3Q7IENFLUZyYWdtZW50KVswXQ==" style="opacity:0.400000"><marker id="mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114" markerWidth="13.000000" markerHeight="16.000000" refX="8.500000" refY="8.000000" viewBox="0.000000 0.000000 13.000000 16.000000" orient="auto" markerUnits="userSpaceOnUse"> <polygon points="0.000000,0.000000 13.000000,8.000000 0.000000,16.000000" fill="#9F0E21" class="connection" stroke-width="3" /> </marker><path d="M 247.250000 68.500000 C 247.250000 106.000000 247.250000 126.000000 247.250000 159.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114)" mask="url(#d2-325f175dce3c41bdb33ba855392f844e)" /></g><g class="KENFLUZyYWdtZW50IC0mZ3Q7IENFLUJlcmVpY2gpWzBd" style="opacity:0.400000"><path d="M 247.250000 236.000000 C 247.250000 272.000000 247.250000 292.000000 247.250000 325.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114)" mask="url(#d2-325f175dce3c41bdb33ba855392f844e)" /></g><g class="KENFLUJlcmVpY2ggLSZndDsgQ0UtS29tcGV0ZW56c3BlemlmaWthdGlvbilbMF0=" style="opacity:0.400000"><path d="M 193.658332 400.198466 C 136.199997 438.000000 121.000000 458.000000 121.000000 491.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114)" mask="url(#d2-325f175dce3c41bdb33ba855392f844e)" /></g><g class="KENFLUJlcmVpY2ggLSZndDsgQ0UtTGVybmluaGFsdClbMF0=" style="opacity:0.400000"><path d="M 300.841668 400.198466 C 358.299988 438.000000 373.500000 458.000000 373.500000 491.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114)" mask="url(#d2-325f175dce3c41bdb33ba855392f844e)" /></g><g class="KENFLUxlcm5pbmhhbHQgLSZndDsgQ0UtSGlud2VpcylbMF0=" style="opacity:0.400000"><path d="M 373.500000 568.000000 C 373.500000 604.000000 373.500000 624.000000 373.500000 657.000000" stroke="#9F0E21" fill="none" class="connection" style="stroke-width:3;" marker-end="url(#mk-d2-325f175dce3c41bdb33ba855392f844e-1919600114)" mask="url(#d2-325f175dce3c41bdb33ba855392f844e)" /></g><mask id="d2-325f175dce3c41bdb33ba855392f844e" maskUnits="userSpaceOnUse" x="-103" y="-101" width="651" height="934">
+<rect x="-103" y="-101" width="651" height="934" fill="white" />
+
+</mask></svg></svg></div>
+<p>Ein Lehrplan in der Kern-Ontologie setzt sich so abstrakt aus einer Abfolge verschiedener Lehrplanfragmente zusammen, die untereinander vernetzt werden können. Beispielsweise kann sich eine Kompetenzspezifikation auf einen bestimmten Lerninhalt beziehen, mit anderen Kompetenzspezifikationen oder auch mit Lehr- und Lernmaterialien verknüpft werden.</p>
+<h2 id="nachgenutzte-ontologienvokabulare">Nachgenutzte Ontologien/Vokabulare</h2>
+<p><strong>BFO</strong></p>
+<p>Top-Level-Ontologien sind allgemeine, abstrakte Ontologien, die grundlegende Kategorien und Beziehungen definieren, die für viele verschiedene Domänen anwendbar sind. Sie bieten eine einheitliche Struktur, um spezifische Ontologien miteinander zu verbinden und zu integrieren.</p>
+<p>Die Basic Formal Ontology (BFO) ist eine solche Top-Level-Ontologie, die zwischen Continuants (Dinge, die über die Zeit bestehen, z. B. Objekte) und Occurrents (Prozesse, die sich über die Zeit erstrecken) unterscheidet. Sie wird insbesondere in den Lebenswissenschaften und der Technik eingesetzt, um Forschungsdaten systematisch zu organisieren.</p>
+<p>Die Nutzung einer Top-Level-Ontologie wie BFO ist sinnvoll, weil sie eine konsistente und interoperable Grundlage für verschiedene Ontologien schafft. Dies erleichtert die Datenintegration, Wiederverwendbarkeit und semantische Interoperabilität zwischen verschiedenen Systemen und Disziplinen.</p>
+<p><strong>Die Schulfach-Ontologie</strong></p>
+<p>Die Schulfach-Ontologie (<code>https://w3id.org/schulfach/1.0.0</code>) ist ein kontrolliertes Vokabular für die Unterrichtsfächer aller 16 deutschen Bundesländer. Der Graph enthält genau <strong>16 SKOS-ConceptSchemes</strong> – eines pro Bundesland (z.B. <code>Schulfächer (Hamburg)</code>, <code>Schulfächer (Bayern)</code>) – und darin insgesamt 894 <strong>Schulfach-Individuen</strong>, die jeweils als Instanz von <code>LP_0000001 (Schulfach)</code> und <code>skos:Concept</code> typisiert sind. Jedes Fach ist über <code>LP_0000029 (von Bundesland)</code> an sein Bundesland gebunden und trägt ein <code>rdfs:label</code> mit dem länderspezifischen Fachnamen – denn derselbe Lehrgegenstand heißt in verschiedenen Ländern unterschiedlich (z.B. „Sachkunde" vs. „Heimat- und Sachkunde" vs. „Mensch-Natur-Technik").</p>
+<p>Für die <strong>Interoperabilität</strong> über Ländergrenzen hinweg werden SKOS-Mapping-Properties genutzt: <code>skos:exactMatch</code> und <code>skos:closeMatch</code> verlinken länderspezifische Fächer sowohl untereinander als auch mit dem bundesweiten <strong>KIM-Schulfachvokabular</strong> (<code>w3id.org/kim/schulfaecher</code>), das als gemeinsamer Referenzpunkt dient. So lässt sich z.B. <code>HH:Deutsch</code> über <code>exactMatch</code> mit <code>BY:Deutsch</code> und dem KIM-Konzept <code>s1005 (Deutsch)</code> verknüpfen, ohne die länderspezifischen Bezeichnungen aufzugeben.</p>
+<p>Repository: https://github.com/FWU-DE/schulfach-ontologie </p>
+<p>SKOS-Vokabular: https://fwu-de.github.io/mem-skos-vocabs/ </p>
+<p><strong>Die Schulart-Ontologie</strong></p>
+<p>Die Schulart-Ontologie (<code>https://w3id.org/schulart/1.0.0</code>) folgt demselben Grundmuster, ist aber inhaltlich dichter: Auch hier gibt es <strong>16 SKOS-ConceptSchemes</strong> (eines pro Bundesland) mit 89 <strong>Schulart-Individuen</strong> (<code>LP_0000111 Schulart</code> + <code>skos:Concept</code>). Daneben enthält der Graph aber noch wesentlich mehr: Die Schularten sind direkt mit ihren <strong>Bildungsgangniveaus</strong> verknüpft (via <code>LP_0000833 (hat Bildungsgangniveau)</code>) und tragen damit bereits die Information, welche Leistungsniveaus an einer Schulart vergeben werden können.
+Am Hamburger Beispiel wird das deutlich: Das <strong>Gymnasium</strong> (<code>HH_0000003</code>) hat die Niveaus <code>Gymnasialniveau Sek I (HH)</code> und <code>Studienstufenniveau (HH)</code> (welche die Sekundarstufe I und II auf dem gymnasialen Niveau abdecken), während die <strong>Stadtteilschule</strong> (<code>HH_0000002</code>) gleich fünf Niveaus führt – von Mindestanforderungen bis hin zu Erhöhten Anforderungen. Diese Verknüpfung macht die Schulart-Ontologie zum Bindeglied zwischen Schulart, Bildungsgangniveau und den Anforderungen in den Lehrplandaten: Ein Lehrplan-Element, das über <code>LP_0000833 (hat Bildungsgangniveau)</code> auf ein bestimmtes Niveau zeigt, lässt sich so direkt zur passenden Schulart zuordnen und umgekehrt.</p>
+<p>Repository: https://github.com/FWU-DE/schulart-ontologie </p>
+<p><strong>time ontology</strong></p>
+<p>...</p>
+<p><strong>relation ontology</strong></p>
+<p>...</p>
+<p><strong>information artefact ontology</strong></p>
+<p>...</p>
+<p><strong>SKOS</strong></p>
+<p>...</p>
+<p><strong>KIM-Vokabulare</strong></p>
+<p>...</p>
+<h2 id="uberblick-uber-klassen-beziehungen-hierarchien">Überblick über Klassen, Beziehungen, Hierarchien</h2>
+<h3 id="klassen">Klassen</h3>
+<p><strong>Klassen, die den Lernprozess beschreiben:</strong></p>
+<p>Hierarchische Übersicht: </p>
+<ul>
+<li>independant continuant (BFO)<ul>
+<li>material entity (BFO)<ul>
+<li>object (BFO)<ul>
+<li>Person</li>
+</ul>
+</li>
+<li>Organisation (BFO)<ul>
+<li>Schule</li>
+<li>Schulklasse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>specifically dependent continuant (BFO)<ul>
+<li>realizable entity (BFO)<ul>
+<li>disposition (BFO)<ul>
+<li>function (BFO)<ul>
+<li>Schulartfunktion</li>
+</ul>
+</li>
+<li>Kompetenz</li>
+</ul>
+</li>
+<li>role (BFO)<ul>
+<li>Schüler Rolle</li>
+<li>Lehrer Rolle</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>process (BFO)<ul>
+<li>Lehrprozess</li>
+<li>Lernprozess</li>
+</ul>
+</li>
+</ul>
+<p><strong>Klassen, die das Bildungssytem beschreiben:</strong></p>
+<p>Hierarchische Übersicht: </p>
+<ul>
+<li>generically dependent continuant (BFO)<ul>
+<li>information content entity (Informationseinheit) (BFO)<ul>
+<li>Schulfach</li>
+<li>Schulart</li>
+<li>Schulstufe</li>
+<li>Jahrgangsstufe</li>
+<li>Oberstufenphase</li>
+<li>Niveau <ul>
+<li>Bildungsgangniveau</li>
+<li>Fachniveaus Sek II</li>
+<li>Fremdsprachenniveau</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>process (BFO)<ul>
+<li>Bildungsgang<ul>
+<li>Gymnasialer Bildungsgang</li>
+<li>Hauptschulbildungsgang</li>
+<li>Realschulbildungsgang</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>process boundary (BFO)<ul>
+<li>Schulabschluss<ul>
+<li>Erster Schulabschluss</li>
+<li>Mittlerer Schulabschluss</li>
+<li>Allgemeine Hochschulreife</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Klassen, die die Lehrpläne beschreiben:</strong></p>
+<p>Hierarchische Übersicht: </p>
+<ul>
+<li>information content entity (Informationseinheit) (BFO)<ul>
+<li>Lehrplan</li>
+<li>Curriculares Element<ul>
+<li>CE-Fragment</li>
+<li>CE-Bereich</li>
+<li>CE-Kompetenzspezifikation</li>
+<li>CE-Lerninhalt</li>
+<li>CE-Hinweis</li>
+<li>CE-Verweis</li>
+<li>CE-Leitperspektive</li>
+</ul>
+</li>
+<li>Funktionsspezifikation<ul>
+<li>Beschreibungsfunktion</li>
+<li>Strukturierungsfunktion</li>
+</ul>
+</li>
+<li>symbol (BFO)<ul>
+<li>Identifikationsnummer</li>
+</ul>
+</li>
+<li>textual entity (BFO)<ul>
+<li>Titel</li>
+<li>Beschreibung</li>
+</ul>
+</li>
+<li>data item (BFO)<ul>
+<li>Zeitspezifikation</li>
+</ul>
+</li>
+<li>Unit </li>
+</ul>
+</li>
+</ul>
+<p>Genaue <strong>Definitionen</strong> der einzelnen Klassen sind zu finden unter: https://fwu-de.github.io/lehrplan-ontologie/index-de.html. </p>
+<h3 id="instanzen-individuals">Instanzen (individuals)</h3>
+<h3 id="beziehungen-properties">Beziehungen (properties)</h3>
+<h2 id="mapping-unterschiedlicher-terminologien-der-bundeslander">Mapping unterschiedlicher Terminologien der Bundesländer</h2>
+<p>So wie sich die Bildungssysteme von Bundesland zu Bundesland unterscheiden, variieren auch die Lehrpläne. Jedes Bundesland strukturiert seine Lehrpläne auf eigene Weise und verwendet teilweise unterschiedliches Vokabular, um gleiche oder ähnliche Konzepte zu beschreiben. Darüber hinaus bestehen innerhalb der Bundesländer fächerübergreifende Unterschiede, sowohl im Aufbau der Lehrpläne als auch in den verwendeten Begrifflichkeiten. Dies führt dazu, dass die Inhalte der Lehrpläne nicht immer eindeutig den von uns definierten Kern-Elementen (CE-Bereich, CE-Kompetenzspezifikation, CE-Lerninhalt und CE-Hinweis) zugeordnet werden können. Zusätzlich erschweren spezifische Besonderheiten einzelner Bundesländer — wie etwa die Aufnahme konkreter Unterrichtsbeispiele oder detaillierter Zeitvorgaben für Lerninhalte, die in anderen Lehrplänen nicht enthalten sind — die Einbindung in ein generisches Modell.</p>
+<p>Im Rahmen der Analyse der Lehrpläne aller Bundesländer wurden zentrale inhaltliche Strukturen identifiziert, die in nahezu allen Lehrplänen vorkommen. Dabei wurden die Fächer Deutsch, Mathematik, Englisch (bzw. die erste Fremdsprache) sowie Physik (bzw. Sachunterricht oder Naturwissenschaften) berücksichtigt. Die identifizierten inhaltlichen Kernkomponenten werden als „Curriculare Elemente“ (CE) bezeichnet. Dazu gehören: </p>
+<p><em>Grafik</em> </p>
+<p>Die nachfolgende Grafik veranschaulicht, wie diese zentralen Elemente der Ontologie dazu beitragen, bundeslandspezifische Terminologien konsistent abzubilden. Als Beispiel dienen Ausschnitte aus dem Deutsch-Lehrplan Mecklenburg-Vorpommerns. Unter jedem curricularen Element sind die Bezeichnungen aufgeführt, die in anderen Bundesländern für funktional vergleichbare Elemente verwendet werden. Diese Zuordnung ermöglicht es, die terminologischen Unterschiede der Länder beizubehalten und zugleich eine klare und strukturierte Vergleichbarkeit herzustellen.</p>
+<p><em>Grafik</em></p>
+<h3 id="integration-der-bildungsstandards">Integration der Bildungsstandards</h3>
+<p><strong>Die Rolle der Kultusministerkonferenz (KMK) und die Nutzung ihrer Bildungsstandards in der Ontologie</strong></p>
+<p>Die Kultusministerkonferenz (KMK) ist das zentrale Gremium der 16 deutschen Bundesländer für alle Fragen rund um Bildung, Wissenschaft und Kultur. Da das Bildungswesen in Deutschland Länderhoheit ist, sorgt die KMK dafür, dass wichtige Aspekte des Schul- und Bildungsbereichs bundesweit abgestimmt sind und vergleichbare Standards bestehen. Zu ihren Aufgaben gehören unter anderem die Entwicklung gemeinsamer Rahmenvorgaben, die Abstimmung von Schulabschlüssen sowie die Formulierung bundesweit verbindlicher <a href="https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html">Bildungsstandards</a>.</p>
+<p>Für viele dieser Bildungsstandards stellt das IQB (Institut zur Qualitätsentwicklung im Bildungswesen) bereits <a href="https://iqb-vocabs.github.io/vokabulare/bildungstandards.html">digital nutzbare Daten</a> bereit. Diese liegen in strukturierten, maschinenlesbaren Formaten vor und ermöglichen dadurch eine effiziente Weiterverarbeitung, Verknüpfung und Analyse. Zu diesen Standards zählen beispielsweise Kompetenzbeschreibungen für die Fächer Deutsch, Mathematik, die erste Fremdsprache (Englisch/Französisch) sowie die naturwissenschaftlichen Fächer (Biologie, Chemie und Physik). Die Bereitstellung in standardisierter Form schafft die Grundlage dafür, Bildungsinhalte über Ländergrenzen hinweg vergleichbar zu machen und digitale Anwendungen zu unterstützen.</p>
+<p>In unserer Ontologie dienen die Bildungsstandards der KMK als übergeordnete Referenzstruktur. Analog zur Vorgehensweise bei den einzelnene Bundesländern, werden auch die in den Bildungsstandards vorkommenden Elemente den übergeordneten Curricularen Elementen zugeordnet und als eindeutig definierte Entitäten im Datenmodell hinterlegt. Diese Referenzpunkte können anschließend mit Lehrplanbestandteilen der Bundesländer verknüpft werden. Dadurch unterstützen die Bildungsstandards eine konsistente Verwendung von Kompetenzbeschreibungen, Betitlungen von Bereichen und Erwartungsniveaus und ermöglichen eine vergleichbare Einordnung der Lehrplaninhalte.</p>
+<p>Die Bildungsstandards beziehen sich dabei auf eine Bildungsstufe und sind bis zum Ende der Primarstufe, der Sekundarstufe I (aufgeteilt in den Ersten und Mittleren Schulabschluss) und der Sekundarstufe II (Allgemeine Hochschulreife) zu erwerben. Da die Lehrpläne der Bundesländer allerdings meist auf Ebene der Jahrgangsstufen ausdifferenziert sind, können die Bildungsstandards nicht genau gleich übernommen werden. Außerdem gibt es nur für die oben genannten Fächer Bildungsstandards. Aus diesen Gründen reichen die Bildungsstandards nicht als gemeinsamer Nenner aller Lehrpläne. Trotzdem bieten sie eine wichtige Referenzquelle.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
